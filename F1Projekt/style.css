@@ -1,0 +1,96 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Navigációs menü */
+header {
+    background-color: #d71920; /* F1 piros */
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bejelentkezes {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.bejelentkezes:hover {
+    color: #d71920; /* piros */
+    background-color: white;
+}
+
+ul li a:hover {
+    color: #fff;
+    background: #939393;
+    border-width: medium;
+    border-style: solid;
+    text-decoration: none;
+}
+
+
