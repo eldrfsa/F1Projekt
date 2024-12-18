@@ -2,8 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bejelentkezés</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 1px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -26,5 +60,29 @@
         </div>
     </nav>
 </header>
+
+<div class="container">
+    <h2>Regisztráció</h2>
+    <form method="POST" action="#">
+        <div class="form-group">
+            <label for="username">Felhasználónév</label>
+            <input type="text" id="username" name="username" placeholder="Felhasználónév" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email cím</label>
+            <input type="email" id="email" name="email" placeholder="Email cím" required>
+        </div>
+        <div class="form-group password-container">
+            <label for="password">Jelszó</label>
+            <input type="password" id="password" name="password" placeholder="Jelszó" required>
+        </div>
+        <div class="form-group password-container">
+            <label for="confirm-password">Jelszó megerősítése</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Jelszó megerősítése" required>
+        </div>
+        <button type="submit" class="btn">Regisztrálok</button>
+    </form>
+</div>
+
 </body>
 </html>
