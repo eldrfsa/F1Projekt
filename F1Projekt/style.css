@@ -92,5 +92,52 @@ ul li a:hover {
     border-style: solid;
     text-decoration: none;
 }
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Link aláhúzás eltávolítása */
+    color: inherit; /* Örökölt szövegszín megőrzése */
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    padding: 15px;
+}
+
+.text h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.text p {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Hover effekt a kattintható dobozokhoz */
+.article:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.article:hover .text h2 {
+    text-decoration: underline;
+    transition: font-weight 0.2s ease-in-out;
+}
 
 
